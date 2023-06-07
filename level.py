@@ -2,12 +2,12 @@ import pygame
 from tiles import Tile
 from settings import *
 from player import Player
+from support import *
 class Level:
     def __init__(self, level_data, surface):
         self.display_surface = surface
         self.setup_level(level_data)
         self.world_shift = 0
-    
     def setup_level(self, layout):
         self.tiles = pygame.sprite.Group()
         self.player = pygame.sprite.GroupSingle()
