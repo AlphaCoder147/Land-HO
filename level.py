@@ -69,7 +69,8 @@ class Level:
         self.tiles.draw(self.display_surface) 
         self.scroll_x()
         
-        self.player.update()
+        
         self.horizontal_nmovement_collison()
         self.vertical_movement_collision()
         self.player.draw(self.display_surface)
+        self.player.update()
