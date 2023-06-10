@@ -29,7 +29,7 @@ class Level:
             self.player_on_ground = False    
             
     def create_landing_dust(self):
-        if not self.player_on_ground and self.player.sprite.on_ground and not self.dust_sprite.sprite():
+        if not self.player_on_ground and self.player.sprite.on_ground and not self.dust_sprite.sprite:
             if self.player.sprite.facing_right:
                 offset = pygame.math.Vector2(10, 15)
             else:
